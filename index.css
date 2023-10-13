@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital@1&family=Dancing+Script&family=Hanken+Grotesk:wght@500;700;800&family=Open+Sans:ital,wght@0,300;0,500;1,300;1,500;1,700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&family=Poppins:wght@100;200;300;400;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #ffffff;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    display: flex;
+    width: 735px;
+    height: 512px;
+    border-radius: 40px;
+    box-shadow: 10px 15px 70px rgba(31, 21, 218, 0.1);;
+}
+.left{
+    flex-basis: 50%;
+    background: linear-gradient(180deg, #6642fe, #322be9);
+    border-radius: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.left h3{
+    color: #d1c8ff;
+    margin-top: 40px;
+    font-size: 24px;
+}
+.left div{
+    height: 200px;
+    width: 200px;
+    background: linear-gradient(180deg, #4121b4, #4735f2);
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 37px 0;
+}
+.left div h1{
+    color: #fff;
+    font-size: 70px;
+}
+.left div h5{
+    color: #8b82f7;
+    font-size: 18px;
+    margin-top: -10px;
+}
+.left h2{
+    color: #fff;
+    font-size: 32px;
+    margin-top: -10px;
+    margin-bottom: 15px;
+}
+.left p{
+    color: #d1c8ff;
+    margin: 0 40px;
+    font-size: 20px;
+}
+.right{
+    padding: 35px 45px;
+    flex-basis: 50%;
+}
+.right h3{
+    font-size: 24px;
+    margin-bottom: 35px;
+    color: #24293e;
+}
+.inner-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+}
+.first{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.first h4{
+    font-size: 18px;
+}
+.last h4{
+    font-size: 18px;
+    color: #24293e;
+}
+.last h4 span{
+    margin-left: 5px;
+    color: #9f9bb3;
+}
+#one{
+    background: #fff6f5;
+}
+#one .first h4{
+    color: #ff5555;
+}
+#two{
+    background: #fffbf2;
+}
+#two .first h4{
+    color: #ffb21e;
+}
+#three{
+    background: #f2fafa;
+}
+#three .first h4{
+    color: #00bb8f;
+}
+#four{
+    background: #f3f3fd;
+}
+#four .first h4{
+    color: #1125d6;
+}
+.right button{
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    width: 100%;
+    color: #fff;
+    background: linear-gradient(180deg, #6642fe, #322be9);
+    padding: 16px 0;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+@media(max-width: 700px){
+    .container{
+        width: 100%;
+        min-height: 100vh;
+        display: block;
+    }
+    .box{
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 0;
+    }
+    .left{
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        width: 100%;
+    }
+    .left h3{
+        margin-top: 20px;
+        font-size: 18px;
+        margin-bottom: -15px;
+    }
+    .left div{
+        height: 140px;
+        width: 140px;
+    }
+    .left div h1{
+        font-size: 50px;
+        margin-bottom: 10px;
+    }
+    .left div h5{
+        font-size: 16px;
+    }
+    .left h2{
+        font-size: 24px;
+        margin-top: 5px;
+    }
+    .left p{
+        margin: 0 40px;
+        font-size: 16px;
+        margin-bottom: 30px;
+    }
+    .right button{
+        background: #303b59;
+        margin-top: 0;
+        margin-bottom: -5px;
+    }
+    .right h3{
+        font-size: 18px;
+        margin-bottom: 25px;
+        margin-top: -10px;
+    }
+}
